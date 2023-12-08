@@ -57,4 +57,4 @@ Created by Kowther Kahin, UC Berkeley Bootcamp Student
 ![Initial screen](assets/img/1..png)
 ## Deployed Application
 
-Access the deployed application [here](
+Access the deployed application [here]( https://kowther7.github.io/JavaScriptQuiz/)
