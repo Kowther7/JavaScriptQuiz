@@ -39,7 +39,7 @@
     #highscore :hover {
         color: rgb(167, 122, 213);
     }
-    .container {
+    .container, .app {
     
     height: 450px;
     padding-top: 15px;
@@ -71,7 +71,7 @@
         color: rgb(67, 7, 122);
     }
     
-    #button1, #next-btn{   
+    #button1, #next-btn, #go-back-btn, #clear-highscores-btn{   
     border-radius: 5px;
     border: none;
     padding-top: 5px;
@@ -91,3 +91,80 @@
     
         background-color: rgb(119, 8, 223);
     }
+
+#highscore-list {
+    list-style: none;
+    margin: 20px;
+  }
+  
+  #highscore-list li {
+    margin: 10px;
+  }
+  
+  .scoreboard-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #name-input {
+    justify-content: center;
+    width: 130px; 
+    height: 40px;
+    font-size: 16px; 
+    margin-top: 10px;
+  }
+  
+  .submit-button {
+    background-color: rgb(67, 7, 122);
+    color: white;
+    font-weight: 900;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+  #highscore-list {
+    list-style: none;
+    margin: 20px;
+  }
+  
+  #highscore-list li {
+    margin: 10px;
+  }
+  
+  .scoreboard-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #go-back-btn {
+    background-color: rgb(67, 7, 122);
+    color: white;
+    font-weight: 900;
+    width:150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #clear-highscores-btn {
+    background-color: rgb(67, 7, 122);
+    color: white;
+    font-weight: 900;
+    width:150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

@@ -153,7 +153,26 @@ var questions = [
     // Show next question button
     nextButton.style.display = "block";
   }
-  
+  // Function used to handle the selection of an answer
+function selectAnswer(event) {
+  var selectedBtn = event.target;
+  var isCorrect = selectedBtn.dataset.correct === "true";
+  var correctAudio = new Audio('assets/sounds/sounds_correct.wav');
+  var incorrectAudio = new Audio('assets/sounds/sounds_incorrect.wav');
+
+  if(isCorrect) {
+    selectedBtn.classList.add("correct");
+    score++;
+    correctAudio.play();
+  } else {
+    selectedBtn.classList.add("incorrect")
+    time -= 10;
+    incorrectAudio.play();
+  }
+
+  // Show next question button
+  nextButton.style.display = "block";
+}
   // Function used to show the user's score & 
   function showScore() {
     resetState();
